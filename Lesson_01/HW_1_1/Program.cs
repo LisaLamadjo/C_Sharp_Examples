@@ -10,11 +10,11 @@ int b = int.Parse(Console.ReadLine()!);
 
 if (a > b)
 {
-    Console.WriteLine("a");
+    Console.WriteLine(a);
 }
 else
 {
-    Console.WriteLine("b");
+    Console.WriteLine(b);
 }
 if (a == b)
 {
