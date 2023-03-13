@@ -1,23 +1,21 @@
 ﻿// Задача 1: Напишите программу, которая на вход принимает два числа и выдаёт, какое число большее, а какое меньшее.
 
-Console.WriteLine("Write the first nuber: ");
+string n_a = Console.ReadLine()!;
+string n_b = Console.ReadLine()!;
 
-int a = int.Parse(Console.ReadLine()!);
-
-Console.WriteLine("Write the second nuber: ");
-
-int b = int.Parse(Console.ReadLine()!);
+int a = int.Parse(n_a);
+int b = int.Parse(n_b);
 
 if (a > b)
 {
-    Console.WriteLine(a);
+    Console.WriteLine($"number {a} is greater, than {b}");
+}
+else if (a == b)
+{
+    Console.WriteLine("the same");
 }
 else
 {
-    Console.WriteLine(b);
-}
-if (a == b)
-{
-    Console.WriteLine("the same");
+    Console.WriteLine($"number {b} is greater, than {a}");
 }
 
