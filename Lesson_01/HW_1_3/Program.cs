@@ -1,21 +1,20 @@
-﻿//Задача 3: Напишите программу, которая на вход принимает число и выдаёт, является ли число чётным (делится ли оно на два без остатка).
+﻿//Задача 3: Напишите программу, которая на вход принимает число и выдаёт, 
+//является ли число чётным еven (делится ли оно на два без остатка) или нечётным odd
 
 Console.WriteLine("write a number: ");
 
 int number = int.Parse(Console.ReadLine()!);
 
-int result = number / 2;
-
-if (result%2 == 0 )
+if (number % 2 == 0)
 
 {
-    Console.WriteLine("Чётное");
+    Console.WriteLine($"The number {number} is even");
 }
 
 else
 
 {
-    Console.WriteLine("Нечётное");
+    Console.WriteLine($"The number {number} is odd");
 }
 
 

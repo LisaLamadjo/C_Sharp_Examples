@@ -3,7 +3,7 @@
 Console.WriteLine("Write a maximum number: ");
 int a = int.Parse(Console.ReadLine()!);
 int b = 2;
-while(a >= b)
+while (a >= b)
 {
     Console.WriteLine(b);
     b = b + 2;
