@@ -2,7 +2,12 @@
 
 int num = int.Parse(Console.ReadLine()!);
 
-int result1 = num / 10 ;
-int result2 = result1 % 10;
-
-Console.WriteLine(result2);
+if ((-1000 < num && num < -100) || (num < 1000 && num > 100))
+{
+    int result = num / 10 % 10;
+    Console.WriteLine(result);
+}
+else
+{
+    Console.WriteLine("Число не трёхзначное");
+}
