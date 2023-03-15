@@ -2,12 +2,12 @@
 // и выдаёт таблицу квадратов чисел от 1 до N.
 void S(int n)
 {
-int a = 1;
-while (a <= n)
-{
-Console.WriteLine(a * a);
-a++;
-}
+    int a = 1;
+    while (a <= n)
+    {
+        Console.WriteLine(a * a);
+        a++;
+    }
 }
 Console.WriteLine("Ввидите число: ");
 S(int.Parse(Console.ReadLine()!));
