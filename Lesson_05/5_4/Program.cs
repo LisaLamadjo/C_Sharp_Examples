@@ -34,19 +34,21 @@ Console.WriteLine();
 }
 
 // Перемножаем в новый массив
+
 int[] productArr(int[] arr)
 {
-int len = arr.Length;
-int[] result = new int[len / 2 + len % 2];
+    int len = arr.Length;
+    int[] result = new int[len / 2 + len % 2];
 
-for (int i = 0; i < len / 2; i++)
-{
-result[i] = arr[i] * arr[len - i -1];
-}
-if (len%2 == 1)
-result = [result.Length - 1] = arr[len / 2];
+    for (int i = 0; i < len / 2; i++)
+    {
+        result[i] = arr[i] * arr[len - i - 1];
+    }
+    if (len % 2 == 1)
+    result[result.Length - 1] = arr[len / 2];
+    return result;
 }
 int[] array = RandArr();
-PrintArray(array);
+PrintArr(array);
 int[] endArr = productArr(array);
 PrintArr(endArr);
