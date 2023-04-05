@@ -1,5 +1,5 @@
-﻿// 0. Задайте двумерный массив размером m×n,
-//заполняющая функция
+﻿// программа находит строку с наименьшей суммой элементов в строке
+
 int[,] MassNums(int row, int column, int from, int to)
 {
     int[,] arr = new int[row, column];
@@ -24,6 +24,22 @@ void Print(int[,] arr)
     Console.WriteLine();
 }
 
+int Sum(int[,] arr)
+{
+    int sum = 0;
+    for (int i = 0; i < arr.GetLength(0); i++)
+    {
+        for (int j = 0; j < arr.GetLength(1); j++)
+        {
+            sum += arr[i, j];
+        }
+        Console.WriteLine($"сумма чисел в {i + 1} строчки: {sum}");
+        sum = 0;
+    }
+    return sum;
+}
+
+//int MaxRow ()
 
 
 Console.Write("Enter the number of rows: ");
@@ -37,3 +53,4 @@ int stop = int.Parse(Console.ReadLine()!);
 
 int[,] mass = MassNums(row_num, column_num, start, stop);
 Print(mass);
+Sum(mass);
