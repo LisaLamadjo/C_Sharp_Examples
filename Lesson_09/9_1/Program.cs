@@ -16,13 +16,13 @@ NaturalArr(num);
 
 //  от большего к меньшему
 
-Console.Write("Enter number N: ");
-int num = int.Parse(Console.ReadLine()!);
+//Console.Write("Enter number N: ");
+//int num = int.Parse(Console.ReadLine()!);
 
-void NaturalArr(int N)
-{
-if(N == 0) return;
-Console.Write($"{N} ");
-NaturalArr(N-1);
-}
-NaturalArr(num);
+//void NaturalArr(int N)
+//{
+//if(N == 0) return;
+//Console.Write($"{N} ");
+//NaturalArr(N-1);
+//}
+//NaturalArr(num);
